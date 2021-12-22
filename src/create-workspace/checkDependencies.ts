@@ -10,7 +10,6 @@ const LINK_COMPOSER = "https://getcomposer.org/";
 const LINK_DOCKER = "https://docs.docker.com/install/";
 const LINK_DOCKER_COMPOSE = "https://docs.docker.com/compose/install/";
 const LINK_WP_CLI = "https://wp-cli.org/#installing";
-const LINK_PRESTISSIMO = "https://packagist.org/packages/hirak/prestissimo";
 
 /**
  * Install a dependency manually.
@@ -151,21 +150,6 @@ async function checkDependencies() {
         ) {
             exit = true;
         }
-    }
-
-    // Prestissimo
-    try {
-        exec = execa.sync("composer", ["global", "show", "hirak/prestissimo"]);
-        logSuccess("├── prestissimo");
-    } catch (e) {
-        logError(
-            `├── Missing optional ${chalk.underline("Prestissimo")} (Composer package), install it now: ${terminalLink(
-                LINK_PRESTISSIMO,
-                LINK_PRESTISSIMO
-            )}`
-        );
-
-        await installNow([`composer global require hirak/prestissimo`]);
     }
 
     if (exit) {

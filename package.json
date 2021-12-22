@@ -19,10 +19,10 @@
     "homepage": "https://devowl.io/wp-react-starter/",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/devowlio/create-wp-react-app.git"
+        "url": "git+https://github.com/xplodedthemes/create-wp-react-app.git"
     },
     "bugs": {
-        "url": "https://github.com/devowlio/create-wp-react-app/issues"
+        "url": "https://github.com/xplodedthemes/create-wp-react-app/issues"
     },
     "author": {
         "name": "Matthias Günter",
@@ -31,8 +31,8 @@
     },
     "contributors": [
         {
-            "name": "devowl.io GmbH",
-            "email": "mail@devowl.io"
+            "name": "Georges Haddad",
+            "email": "prismosoft@gmail.com"
         }
     ],
     "license": "MIT",
